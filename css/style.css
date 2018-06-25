@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  width: 100%
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -17,8 +17,26 @@ body {
   background-repeat: no-repeat;
 }
 
-.container h1 {
-  font-size: 2.5em;
+.left-arrow {
+  background-image: url(../images/arrow-left.png);
+  background-repeat: no-repeat;
+  float: left;
+  /* margin-left: 50px; */
+  width: 30px;
+  height:30px;
+}
+
+.icon {
+  background-image: url(../images/busy-bus-icon-2.png);
+  background-repeat: no-repeat;
+  /* margin-left: 50px; */
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+
+.nav h1 {
+  font-size: 2.2em;
   font-family: "sf pro display", sans-serif;
   text-align: center;
   margin: 25px 0px;
@@ -37,7 +55,9 @@ body {
   background-repeat: no-repeat;
 }
 .bus-route {
-  border-bottom: 12px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: grey;
   width: 100%;
   height: 100px;
   background-color: #ffffff;
@@ -46,11 +66,11 @@ body {
 }
 
 .content {
-  padding: 40px 10px;
+  padding: 25px 10px;
 }
 
 .content h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: "sf pro display", sans-serif;
   float: left;
   font-weight: bold;
@@ -62,78 +82,45 @@ body {
   float: left;
 }
 
+.busline {
+  margin-left: 3px;
+}
+
 .busline h2 {
   color: blue;
 }
 
-.street h3 {
-  margin-left: 28px;
+.street {
+  margin-left: 32px;
   margin-top: 12px;
 }
 
-.minute h2 {
-  color: green;
-  margin-left: 35px;
+.street h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #2b2c2d;
 }
 
-.min h3 {
+.time h2 {
+  color: green;
+  margin-left: 33px;
+}
+
+.ampm h3 {
   font-size: 1.5em;
   color: green;
-  margin-top: 16px;
-  margin-left: 2px;
-}
-/* .preview {
-  width: 100%;
-  height: 300px;
-  margin-top: 20px;
-  display: block;
-  float: left;
-  padding: 40px 40px 20px 20px;
+  margin-top: 11px;
 }
 
-.preview h1 {
-  font-family: 'Times New Roman', times, serif;
-  font-size: 2em;
-  text-transform: capitalize;
-  text-align: left;
-  margin: 0;
-  padding-left: 10px;
+.direction h3 {
+  padding-left: 3px;
+  padding-top: 5px;
+  color: grey;
 }
 
-.baku {
-  background-image: url(../images/);
-  background-size: cover;
-  background-position: left;
+.frequency h3 {
+  margin-left: 160px;
+  padding-top: 5px;
+  float: right;
+  color: grey;
 }
-
-.london {
-  background: #fff url(../images/);
-  background-size: cover;
-  background-position: left;
-}
-
-.madrid {
-  background: #fff url(../images/madrid.jpg);
-  background-size: cover;
-  background-position: left;
-}
-
-.rome {
-  background: #fff url(../images/rome.jpg);
-  background-size: cover;
-  background-position: left;
-}
-
-@media screen and (min-width: 575px){
-   .preview {
-    margin: 1%;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 991px){
-   .preview {
-    margin: 1%;
-    width: 100%;
-  }
-} */
