@@ -8,52 +8,66 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 375px;
   margin: 0 auto;
+  height: 667px;
+  overflow: scroll;
 }
+
+/* Nav Styles */
 
 .nav {
   background-image: url(../images/ios-status-bar.png);
   background-repeat: no-repeat;
+  background-color: blue;
+  padding: 20px;
+  height: 125px;
+  position: fixed;
+  width: 100%;
 }
 
 .left-arrow {
   background-image: url(../images/arrow-left.png);
   background-repeat: no-repeat;
   float: left;
-  /* margin-left: 50px; */
-  width: 30px;
-  height:30px;
+  width: 10%;
+  height: 30px;
+  margin-top: 30px;
 }
 
 .icon {
   background-image: url(../images/busy-bus-icon-2.png);
   background-repeat: no-repeat;
-  /* margin-left: 50px; */
+  margin-left: 30px;
   float: left;
-  width: 40px;
-  height: 40px;
+  width: 15%;
+  height: 30px;
+  margin-top: 30px;
 }
 
 .nav h1 {
   font-size: 2.2em;
   font-family: "sf pro display", sans-serif;
   text-align: center;
-  margin: 25px 0px;
   color: #ffffff;
+  margin-top: 32px;
 }
 
-.nav {
-  background-color: blue;
-  padding: 20px;
-}
+
+/* Map Styles */
+
 .map {
   background-image: url(../images/busy-bus-map.png);
-  width: 100%;
-  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: left;
+  margin-top: 125px;
+  width: 100%;
+  height: 200px;
 }
+
+/* Bus Route List Styling */
+
 .bus-route {
   border-bottom: 1px;
   border-style: solid;
@@ -65,62 +79,65 @@ body {
   float: left;
 }
 
-.content {
-  padding: 25px 10px;
-}
 
-.content h2 {
-  font-size: 2.5em;
-  font-family: "sf pro display", sans-serif;
-  float: left;
-  font-weight: bold;
-}
-
-.content h3 {
+.bus-route p {
   font-size: 1.2em;
   font-family: "sf pro display", sans-serif;
   float: left;
 }
 
 .busline {
-  margin-left: 3px;
+  width: 65%;
+  height: 100px;
+  float: left;
+  padding-top: 15px;
+  padding-left: 10px;
 }
 
 .busline h2 {
-  color: blue;
-}
-
-.street {
-  margin-left: 32px;
-  margin-top: 12px;
-}
-
-.street h3 {
-  font-size: 1.3em;
+  font-size: 3em;
+  font-family: "sf pro display", sans-serif;
+  float: left;
   font-weight: bold;
-  color: #2b2c2d;
+  color: blue;
+  margin-right: 70px;
 }
 
-.time h2 {
+h2.red {
+  color: red;
+}
+
+.busline p {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-right: 40px;
+  padding-left: 4px;
+}
+
+p.direction {
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-top: 5px;
+  float: left;
+}
+
+.time {
+  width: 35%;
+  height: 100px;
+  float: left;
+  padding-right: 10px;
+  padding-top: 25px;
+  text-align: right;
+}
+
+.time h3 {
+  font-size: 2.3em;
   color: green;
-  margin-left: 33px;
+  font-family: "sf pro display", sans-serif;
+  font-weight: bold;
+  margin-right: 5px;
 }
 
-.ampm h3 {
-  font-size: 1.5em;
-  color: green;
-  margin-top: 11px;
-}
-
-.direction h3 {
-  padding-left: 3px;
-  padding-top: 5px;
-  color: grey;
-}
-
-.frequency h3 {
-  margin-left: 160px;
-  padding-top: 5px;
-  float: right;
-  color: grey;
+h3.red {
+  color:red;
 }
